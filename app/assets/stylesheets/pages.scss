@@ -1,3 +1,31 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.contenido_about {
+  //background-color: pink;
+  margin-top: -60px;
+  .flex_about {
+    width: 80%;
+    //background-color: orange;
+    margin: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .about_title {
+      text-align: center;
+      font-size: 1.8em;
+      color: #4f5353;
+    }
+    .about_text {
+      width: 80%;
+      text-align: center;
+      color: #333;
+      line-height: 20px;
+    }
+  }
+}

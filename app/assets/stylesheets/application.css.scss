@@ -16,77 +16,6 @@
 
  @import "normalize";
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300,500);
- // .bara-superior {
- //   width: 100%;
- //   height: 50px;
- //   background-color: #dad5d5;
- //   display: -webkit-flex;
- //   display: -moz-flex;
- //   display: -ms-flex;
- //   display: -o-flex;
- //   display: flex;
- //   justify-content: flex-end;
- // }
- // #page_wrapper {
- //   width: 100%;
- //   height: 100vh;
- //   background-color: #dbdbdb;
- //   display: -webkit-flex;
- //   display: -moz-flex;
- //   display: -ms-flex;
- //   display: -o-flex;
- //   display: flex;
- //     #sidebar {
- //       width: 160px;
- //       //height: 100%;
- //       background-color: #777;
- //       display: -webkit-flex;
- //       display: -moz-flex;
- //       display: -ms-flex;
- //       display: -o-flex;
- //       display: flex;
- //       justify-content: flex-end;
- //       .menu {
- //         width: 300px;
- //         //background-color: #eee;
- //         ul {
- //           display: -webkit-flex;
- //           display: -moz-flex;
- //           display: -ms-flex;
- //           display: -o-flex;
- //           display: flex;
- //           //justify-content:flex-end;
- //           align-items: center;
- //           flex-direction:column;
- //           li {
- //             margin: 20px;
- //             text-decoration: none;
- //             flex-grow: 1;
- //             list-style: none;
- //             color: #eee;
- //           }
- //         }
- //         p {
- //           color: #eee;
- //           flex:1;
- //           margin-top: 220%;
- //           text-align: center;
- //         }
- //       }
- //     }
- //
- //     #post_wrapper {
- //       //width: 70%;
- //       background-color: red;
- //       flex-grow: 1 ;
- //       display: -webkit-flex;
- //       display: -moz-flex;
- //       display: -ms-flex;
- //       display: -o-flex;
- //       display: flex;
- //       justify-content: space-around;
- //     }
- //   }
 
    /**El SASS Principal**/
 
@@ -230,7 +159,7 @@ h1 {
        }
       .imagen_header {
         width: 100%;
-        height: 480px;
+        height: 380px;
         margin: auto;
         //margin-top: 80px;
         background-color:#b7d9d8;
@@ -251,17 +180,11 @@ h1 {
         //   position: center;
         // }
       }
-      // .post_wrapper {
-      //   //width: 70%;
-      //   background-color: red;
-      //   flex-grow: 1 ;
-      //   display: -webkit-flex;
-      //   display: -moz-flex;
-      //   display: -ms-flex;
-      //   display: -o-flex;
-      //   display: flex;
-      //   justify-content: space-around;
-      // }
+      .pagina_actual {
+        color: #8ca1a0;
+        margin-left: 20px;
+        padding-top: 20px;
+      }
       .contenido {
         width: 100%;
         //height: 2000px;
@@ -289,6 +212,28 @@ h1 {
             height: 400px;
             margin: 7px;
             background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            .contenedor_titolo {
+              //background-color: red;
+              width: 80%;
+              margin-left: 10px;
+            .title a {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 500;
+              font-size: 1.2em;
+              //margin-left: 10px;
+              text-decoration: none;
+              color: #4f5353;
+              //padding-left: 10px;
+            }
+            .date {
+              //margin-left: 10px;
+              margin-top: -10px;
+              font-size: 0.9em;
+              font-weight: lighter;
+              color: #333;
+            }
+           }
           }
           .carta_uno {
             background-color: #fff;
