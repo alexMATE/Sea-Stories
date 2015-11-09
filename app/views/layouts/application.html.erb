@@ -7,11 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="bara-superior">
+  <!-- <div class="bara-superior">
     <button><%= link_to "New Post", new_post_path %></button>
     <button>Sigin aut</button>
-  </div>
-<div id="page_wrapper">
+  </div> -->
+<!-- <div id="page_wrapper">
   <div id="sidebar">
     <div id="logo"></div>
     <div class="menu">
@@ -19,13 +19,11 @@
         <li class="category">Website</li>
         <li><%= link_to "Blog", root_path %></li>
         <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "New Post", new_post_path %></li>
       </ul>
       <p class="sigin_in">Sigin in/Admin</p>
     </div>
   </div>
-  <!-- <div class="bara-superior">
-    <button>Sigin aut</button>
-  </div> -->
 
   <div id="post_wrapper">
     <% if current_page?(root_path) %>
@@ -41,7 +39,80 @@
     <% end %>
      <%= yield %>
   </div>
-</div>
+</div> -->
+
+<!--contenido MIOOO--->
+
+
+<div id="wraper_flex">
+    <div id="bara_menu">
+      <div class="logo">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><%= link_to "Blog", root_path %></li>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "New Post", new_post_path %></li>
+        </ul>
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>Istagram</li>
+          <li>Email</li>
+        </ul>
+      </div>
+    </div>
+    <div id="contenedor_principal_flex">
+        <div class="header">
+          <!-- <i class="fa fa-angle-down fa-lg"></i>
+         -->
+             <span class="nombre">
+             <p>Alex Man </p>
+             </span>
+             <span class="log_out">
+             <p><i class="fa fa-sign-out"></i>  Log out</p>
+             </span>
+              <div class="imagen_log">
+               <!-- <img src="img/alex.png" alt=""> -->
+              </div>
+        </div>
+        <div class="imagen_header">
+          <!-- <img src="/img/youandme.png" alt=""> -->
+        </div>
+
+        <div class="pagina_actual">
+          <% if current_page?(root_path) %>
+            <p>All Posts</p>
+          <% elsif current_page?(about_path) %>
+            <p>About</p>
+          <% else %>
+            <%= link_to "Back to All Posts", root_path %>
+          <% end %>
+        </div>
+
+        <div class="contenido">
+          <div class="cartera_flex_uno">
+        <% flash.each do |name, msg| %>
+          <%= content_tag(:div, mmsg, class: "alert") %>
+        <% end %>
+         <%= yield %>
+          </div>
+         </div>
+
+        <!-- <div class="contenido">
+         <div class="cartera_flex_uno">
+            <div class="carta carta_uno">
+
+            </div>
+            <div class="carta carta_dos">carta 2</div>
+            <div class="carta carta_tres">carta 3</div>
+            <div class="carta carta_cuatro">carta 4</div>
+            <div class="carta carta_cinco">carta 5</div>
+            <div class="carta carta_seis">carta 6</div>
+        </div>
+      </div> -->
+    </div>
+  </div>
 
 </body>
 </html>
