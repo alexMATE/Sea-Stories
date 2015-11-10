@@ -89,6 +89,15 @@ h1 {
             list-style-type: none;
             line-height: 37px;
             color: #6c7373;
+            a {
+              text-decoration: none;
+              color:#6c7373;
+              &:hover {
+                border-right: 1px solid #828787;
+                padding-right: 5px;
+                transition: border 0.1s;
+              }
+            }
           }
         }
       }
@@ -184,6 +193,13 @@ h1 {
         color: #8ca1a0;
         margin-left: 20px;
         padding-top: 20px;
+        a {
+          text-decoration: none;
+          color: #8ca1a0;
+          &:hover {
+            color:#22bebe;
+          }
+        }
       }
       .contenido {
         width: 100%;

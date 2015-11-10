@@ -29,3 +29,64 @@
     }
   }
 }
+/**Form New Post**/
+#create_post {
+  width: 80%;
+  margin-top: 20px;
+    h1 {
+      color:#4f5353;
+    }
+    #new_post {
+      label {
+        color: #656a6a;
+      }
+      #post_title {
+        color: #2a2d2d;
+        background-color: #eee;
+        padding: 10px;
+        border: none;
+        border-left: solid 2px #c9c9c9;
+        border-top: solid 2px #c9c9c9;
+        transition: border 0.3s;
+        outline: none;
+        margin-top: 5px;
+        &:focus {
+          border-top: none;
+          border-bottom: solid 2px #c9c9c9;
+          border-left: solid 2px #c9c9c9;
+          border-radius: 2px;
+        }
+      }
+      #post_body {
+        width: 90%;
+        height: 400px;
+        background-color: #eee;
+        border: none;
+        border-left: solid 2px #c9c9c9;
+        border-top: solid 2px #c9c9c9;
+        transition: border 0.3s;
+        outline: none;
+        margin-top: 5px;
+        &:focus {
+          border-top: none;
+          border-bottom: solid 2px #c9c9c9;
+          border-left: solid 2px #c9c9c9;
+        }
+      }
+      .bottom {
+        margin-top: 20px;
+        input {
+        border: 1px solid #a4b8b8;
+        padding: 5px 12px 5px 12px;
+        border-radius: 3px;
+        color: #3b4040;
+        background-color: #d2dfdf;
+        font-family: 'Roboto', sans-serif;
+        &:hover {
+          background: transparent;
+	        color: #22bebe;
+        }
+      }
+      }
+    }
+  }
