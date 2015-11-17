@@ -41,15 +41,22 @@
          <% if user_signed_in? %>
              <span class="nombre">
              <!--<p>Alex Man </p>-->
-             <button><%= link_to "New Post", new_post_path %></button>
+                <span class="buuton_header">
+                  <%= link_to "New Post", new_post_path %>
+                </span>
              </span>
              <span class="log_out">
-             <p><i class="fa fa-sign-out"></i>  Log out</p>
+             <!--<p><i class="fa fa-sign-out"></i>  Log out</p>-->
+             <% if user_signed_in? %>
+             <p class="logout">
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+              </p>
+             <% end %>
              </span>
           <% end %>
-              <div class="imagen_log">
-               <!-- <img src="img/alex.png" alt=""> -->
-              </div>
+              <!--<div class="imagen_log">
+               <img src="img/alex.png" alt="">
+              </div>-->
         </div>
         <div class="imagen_header">
           <!-- <img src="/img/youandme.png" alt=""> -->
