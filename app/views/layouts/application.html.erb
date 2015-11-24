@@ -77,7 +77,7 @@
              <li>Istagram</li>
              <li>Email</li>
            </ul>
-          </div> 
+          </div>
         </div>
     <!--END Menu-Mobile-->
         <div class="imagen_header">
@@ -111,10 +111,21 @@
         $(".menu-mobile").animate({
              height: 'toggle'
          });
-    });
-}
+      });
+     }
 
-$( document ).ready( openMenu );
+     //Menu de editar el post
+
+     function clikMenuHeader( jQuery ) {
+     $(".menu-editar").click(function(){
+         $(".edit-dilete").animate({
+              height: 'toggle'
+          });
+       });
+      }
+
+     $( document ).ready( openMenu );
+     $( document ).ready( clikMenuHeader );
 
 
 

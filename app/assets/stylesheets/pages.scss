@@ -108,6 +108,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    @media screen and (max-width: 760px) {
+      width: 95%;
+    }
     .header-post-page {
       width: 640px;
       height: auto;
@@ -116,6 +119,12 @@
       display: -ms-flex;
       display: -o-flex;
       display: flex;
+      @media screen and (max-width: 760px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
       .imagen-post, .title-conteiner {
         background-color: #D6E0E0;
         width: 320px;
@@ -129,11 +138,35 @@
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        @media screen and (max-width: 760px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
       }
 
       .title-conteiner {
-        //flex-direction: column;
+        flex-direction: column;
         //background-color: transparent;
+        .menu-editar {
+            content: '';
+            display: block;
+            height: 50px;
+            position: absolute;
+            margin-top:70px;
+            margin-left: 220px;
+            border-radius: 25px;
+            //top: 50px;
+            width: 50px;
+            background-color: #7CC3BF;
+            z-index: 1;
+            cursor: pointer;
+            @media screen and (max-width: 600px) {
+              margin-top:0px;
+              margin-left: 80%;
+            }
+        }
       }
     }
 
@@ -144,6 +177,19 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @media screen and (max-width: 760px) {
+          width: 100%;
+        }
+        .edit-dilete {
+          background-color: #D4BDBD;
+          width: 100%;
+          height: 60px;
+          display: none;
+          a {
+            color: #9F8292;
+            text-decoration: none;
+          }
+        }
         .submitted-date{
           //background-color: red;
           width: 90%;
@@ -153,13 +199,13 @@
           color: #917E33;
           display: flex;
           justify-content: space-between;
-          .edit-dilete {
-            //background-color: #D4BDBD;
-            a {
-              color: #9F8292;
-              text-decoration: none;
-            }
-          }
+          // .edit-dilete {
+          //   //background-color: #D4BDBD;
+          //   a {
+          //     color: #9F8292;
+          //     text-decoration: none;
+          //   }
+          // }
         }
         .body-post {
           width: 90%;
