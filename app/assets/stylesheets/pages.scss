@@ -90,3 +90,86 @@
       }
     }
   }
+
+  /**Post Page**/
+
+.carta-principal {
+    width: 630px;
+    height: auto;
+    //padding: -5px 0px 2.5px 0px;
+    background-color: rgba(#333333, 0.77);
+    box-shadow:0px 5px 15px -2px rgba(#333333, 0.77);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .header-post-page {
+      width: 640px;
+      height: auto;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      .imagen-post, .title-conteiner {
+        background-color: #D6E0E0;
+        width: 320px;
+        height: auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .title-conteiner {
+        //flex-direction: column;
+        //background-color: transparent;
+      }
+    }
+
+   .body-conteiner {
+        width: 640px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .submitted-date{
+          //background-color: red;
+          width: 90%;
+          margin-top: 7px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          color: #917E33;
+          display: flex;
+          justify-content: space-between;
+          .edit-dilete {
+            //background-color: #D4BDBD;
+            a {
+              color: #9F8292;
+              text-decoration: none;
+            }
+          }
+        }
+        .body-post {
+          width: 90%;
+          //background-color: #856473;
+          padding:7px;
+          margin-top: 50px;
+          line-height: 19px;
+          -webkit-font-smoothing: antialiased;
+        letter-spacing: .1px;
+        line-height: 24px;
+         }
+       }
+}

@@ -1,25 +1,37 @@
-<%= image_tag @post.image.url(:medium) %>
+<div class="carta-principal">
+    <div class="header-post-page">
+        <div class="imagen-post">
+        <%= image_tag @post.image.url(:medium) %>
+        </div>
 
-<h1 class="title">
-  <%= @post.title %>
-</h1>
+        <div class="title-conteiner">
+            <h1 class="title">
+              <%= @post.title %>
+            </h1>
+            <p class="date">
+            </p>
+        </div>
+    </div>
+    <div class="body-conteiner">
+          <div class="submitted-date">
+          Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+            <span class="edit-dilete">
+             <% if user_signed_in? %>
+               | <%= link_to 'Edit', edit_post_path(@post) %>
+               | <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
+             <% end %>
+            </span>
+          </div>
+          <p class="body-post">
+            <%= @post.body %>
+          </p>
 
-<p class="date">
-  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-  <% if user_signed_in? %>
-	  | <%= link_to 'Edit', edit_post_path(@post) %>
-	  | <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
-</p>
+          <div id="comments">
+            <h2><%= @post.comments.count %> Comments</h2>
+            <%= render @post.comments %>
 
-<p class="body-post">
-  <%= @post.body %>
-</p>
-
-<div id="comments">
-  <h2><%= @post.comments.count %> Comments</h2>
-  <%= render @post.comments %>
-
-  <h3>Add a comment:</h3>
-  <%= render "comments/form" %>
-</div>
+            <h3>Add a comment:</h3>
+            <%= render "comments/form" %>
+          </div>
+    </div>
+  </div>
