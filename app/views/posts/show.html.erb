@@ -17,10 +17,14 @@
     </div>
     <div class="body-conteiner">
       <% if user_signed_in? %>
-          <span class="edit-dilete">
-             | <%= link_to 'Edit', edit_post_path(@post) %>
-             | <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
-          </span>
+          <div class="edit-dilete">
+            <span class="tools">
+               <%= fa_icon "pencil" %>
+               <%= link_to 'Edit', edit_post_path(@post) %>
+               <%= fa_icon "trash" %>
+               <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
+            </span>
+          </div>
       <% end %>
           <div class="submitted-date">
           Submitted <%= time_ago_in_words(@post.created_at) %> Ago
