@@ -14,10 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-// $(document).ready(function(){
-//     $(".menu-opener").click(function(){
-//         $(".menu-mobile").toggle();
-//     });
-// });
-
