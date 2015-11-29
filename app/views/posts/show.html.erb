@@ -1,7 +1,16 @@
 <div class="carta-principal">
     <div class="header-post-page">
+    <style media="screen">
+        .header-post-page { background-image: url("/assets/basio-3.png"),
+                                              url(<%= @post.image.url(:large) %>);
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            background-size: cover;
+                            background-position: center;
+                          }
+    </style>
         <div class="imagen-post">
-        <%= image_tag @post.image.url(:medium) %>
+        <%= image_tag @post.image.url(:thumb) %>
         </div>
 
         <div class="title-conteiner">
