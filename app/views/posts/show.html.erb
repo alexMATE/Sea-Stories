@@ -19,13 +19,16 @@
             </h1>
             <!-- <p class="date">
             </p> -->
-          <% if user_signed_in? %>
+            <p>
+              <%= @post.user.email %>
+            </p>
+          <% if @post.user == current_user %>
             <span class="menu-editar"></span>
           <% end %>
         </div>
     </div>
     <div class="body-conteiner">
-      <% if user_signed_in? %>
+      <% if @post.user == current_user %>
           <div class="edit-dilete">
             <span class="tools">
                <%= fa_icon "pencil" %>
