@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="30.336319mm"
+   height="15.922405mm"
+   viewBox="0 0 107.49089 56.417971"
+   id="svg4327"
+   version="1.1">
+  <defs
+     id="defs4329">
+    <linearGradient
+       xlink:href="#linearGradient4241"
+       id="linearGradient4247"
+       x1="-285.88855"
+       y1="722.38647"
+       x2="-180.22214"
+       y2="905.90656"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4241">
+      <stop
+         style="stop-color:#6e807d;stop-opacity:1"
+         offset="0"
+         id="stop4243" />
+      <stop
+         id="stop4249"
+         offset="0.23629093"
+         style="stop-color:#b0bab8;stop-opacity:0.76078433" />
+      <stop
+         style="stop-color:#aabbb8;stop-opacity:0;"
+         offset="1"
+         id="stop4245" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4291"
+       x="-0.063190855"
+       width="1.1263818"
+       y="-0.37127188"
+       height="1.7425438">
+      <feGaussianBlur
+         stdDeviation="1.7958555"
+         id="feGaussianBlur4293" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata4332">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g4295"
+     transform="translate(311.92112,-717.8833)">
+    <path
+       style="opacity:0.219;fill:url(#linearGradient4247);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -311.84833,747.34021 14.98896,26.96106 92.42915,0 0,-25.18415 -13.98515,-30.79715 -0.72779,28.87468 z"
+       id="path4239" />
+    <rect
+       style="opacity:1;fill:#5caeae;fill-opacity:1;stroke:#5cadad;stroke-width:2.42430806;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.722449"
+       id="rect4220"
+       width="90.815857"
+       height="29.411951"
+       x="-310.50339"
+       y="718.34247"
+       ry="1.1291953" />
+    <text
+       id="text4251"
+       y="737.89825"
+       x="-301.01245"
+       style="font-style:normal;font-weight:normal;font-size:16.26139069px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.45199998;fill:#356f71;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4291)"
+       xml:space="preserve"><tspan
+         dx="0.1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:-1.3599999px;fill:#356f71;fill-opacity:1"
+         y="737.89825"
+         x="-301.01245"
+         id="tspan4253">Read more</tspan></text>
+    <path
+       style="opacity:1;fill:#69c1c1;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -308.85913,719.74907 45.56255,0 c 0.31454,0 0.30922,0.37831 0.56775,0.55269 l 37.97228,25.61238 c 0.25854,0.17439 -0.25321,0.55269 -0.56775,0.55269 l -83.53483,0 c -0.31453,0 -0.56774,-0.24649 -0.56774,-0.55269 l 0,-25.61238 c 0,-0.3062 0.25321,-0.55269 0.56774,-0.55269 z"
+       id="rect4157" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.26139069px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-301.01245"
+       y="737.89825"
+       id="text4222"><tspan
+         id="tspan4224"
+         x="-301.01245"
+         y="737.89825"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:-1.3599999px;fill:#ececec"
+         dx="0.1">Read more</tspan></text>
+  </g>
+</svg>

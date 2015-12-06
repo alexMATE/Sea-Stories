@@ -1,13 +1,26 @@
 <% @posts.each do |post| %>
 
+      <div class="conteiner-carta">
+        <div class="imagen-carta">
 
-      <div class="carta">
+          <div class="imagen-rails">
+            <%= image_tag post.image.url(:medium) %>
+          </div>
+          <p><%= post.created_at.strftime("%B, %d, %Y") %></p>
+        </div>
+        <h2 class="title"><%= link_to post.title, post %></h2>
+        <p class="articulo">Un poco de texto de entrada y si quieres leer mas ya sabes que tienes que hacer ...</p>
+        <div class="butonsito"></div>
+      </div>
+
+
+      <!-- <div class="carta">
         <div class="contenedor_titolo">
         	<%= image_tag post.image.url(:thumb) %>
             <h2 class="title"><%= link_to post.title, post %></h2>
             <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
         </div>
-      </div>
+      </div> -->
 
 
 <% end %>

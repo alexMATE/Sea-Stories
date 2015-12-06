@@ -192,7 +192,7 @@ h1 {
 
       .imagen_header {
         width: 100%;
-        height: 420px;
+        height: 450px;
         margin: auto;
         margin-top: 60px;
         background-color:#b7d9d8;
@@ -202,16 +202,21 @@ h1 {
           size: cover;
           position: center;
         }
+        @media screen and (max-width: 340px) {
+          height: 200px;
+        }
+        @media screen and (min-width: 1504px) {
+          background: {
+            image: url('funmar66-grande.svg');
+            size: cover;
+            position: center;
+          }
+          height: 550px;
+        }
 
         img {
-          width: 80%;
-          //margin-top: 40px;
+          width: 100%;
         }
-        // background: {
-        //   image: url('/img/hobre_mar.png');
-        //   size: cover;
-        //   position: center;
-        // }
       }
       .pagina_actual {
         color: #8ca1a0;
@@ -227,7 +232,6 @@ h1 {
       }
       .contenido {
         width: 100%;
-        //height: 2000px;
         background-color:#eee; //#777;
         display: -webkit-flex;
         display: -moz-flex;
@@ -238,7 +242,6 @@ h1 {
         align-items: center;
         .cartera_flex_uno {
           width: 100%;
-          //background-color: red;
           padding: 120px 0px 60px 0px;
           display: -webkit-flex;
           display: -moz-flex;
@@ -247,52 +250,84 @@ h1 {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          .carta {
-            width: 340px;
-            height: 400px;
-            margin: 7px;
-            background-color: #fff;
-            font-family: 'Roboto', sans-serif;
-            .contenedor_titolo {
-              //background-color: red;
+
+          // Cartas de index
+          .conteiner-carta {
+            width: 300px;
+            height: auto;
+            margin: 17px;
+            //background-color: rgba(73, 181, 239, 0.13);
+            background-color: #eee;
+            box-shadow: 0px 0px 50px -10px rgb(90, 90, 90);
+            border-radius: 3px;
+            position: relative;
+
+            .imagen-carta {
+              width: 100%;
+              height: 220px;
+              background-color: #333;
+              position: relative;
+              background: {
+                  image: url('cuadro.png');
+                  repeat: no-repeat;
+                  size: cover;
+                  position: bottom center;
+                }
+              .imagen-rails {
+                width: 100%;
+                height: 220px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              p {
+                color: rgba(234, 232, 232, 0.69);
+                background-color: #333;
+                padding: 10px;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                margin-bottom: 18px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 100;
+                font-size: 0.9em;
+              }
+            }
+            .title {
+              color: #3b3b3b;
+              //background-color: pink;
+              width: 85%;
+              margin: auto;
+              margin-top: 25px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 600;
+              line-height: 26px;
+            }
+            .articulo {
               width: 80%;
-              margin-left: 10px;
-            .title a {
-              font-family: 'Roboto', sans-serif;
-              font-weight: 500;
-              font-size: 1.2em;
-              //margin-left: 10px;
-              text-decoration: none;
-              color: #4f5353;
-              //padding-left: 10px;
+              margin: auto;
+              margin-top: 14px;
+              margin-bottom: 100px;
             }
-            .date {
-              //margin-left: 10px;
-              margin-top: -10px;
-              font-size: 0.9em;
-              font-weight: lighter;
-              color: #333;
+            .butonsito {
+              width: 107px;
+              height: 56px;
+              //background-color: pink;
+              bottom: 0;
+              right: 0;
+              position: absolute;
+              background: {
+                   image: url('read-button22.svg');
+                  repeat: no-repeat;
+                  size: cover;
+                  position: top;
+                }
             }
-           }
           }
-          .carta_uno {
-            background-color: #fff;
-          }
-          .carta_dos {
-            //background-color: #6557ac;
-          }
-          .carta_tres {
-            //background-color: #d3e3e2;
-          }
-          .carta_cuatro {
-            //background-color: #783f8c;
-          }
-          .carta_cinco {
-            //background-color: #a69652;
-          }
-          .carta_seis {
-            //background-color: #3cba4d;
-          }
+
+
+      
         }
       }
     }
