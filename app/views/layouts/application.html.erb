@@ -45,6 +45,7 @@
               <span class="linea"></span>
             </div>
           <!--Boton de Menu-->
+
          <% if user_signed_in? %>
              <span class="nombre">
              <!--<p>Alex Man </p>-->
@@ -52,6 +53,7 @@
                   <%= link_to "New Post", new_post_path %>
                 </span>
              </span>
+
              <span class="log_out">
              <!--<p><i class="fa fa-sign-out"></i>  Log out</p>-->
              <% if user_signed_in? %>
@@ -61,7 +63,7 @@
              <% end %>
              </span>
           <% end %>
-
+          
         </div>
     <!--Menu-Mobile-->
         <div class="menu-mobile">
