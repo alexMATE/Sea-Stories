@@ -281,3 +281,181 @@
          }
        }
 }
+//Log In Forms
+
+.flexy {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// .conteiner-login {
+//   width: 100%;
+//   height: 100vh;
+//   background-color: #444;
+  .carta-login {
+    width: 625px;
+    height: 625px;
+    background-color: #aca5a5;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 2px #bec3c2,
+     2px 0 5px rgba(#333333, 0.59);
+    background: {
+      image: url("fondo-login-4.png"),
+      url("mar3-2.jpg");
+      repeat:repeat;
+      size: 300px, cover;
+    }
+    .header-login {
+      width: 537px;
+      height: 84px;
+      background-color: rgba(#5ca7b4, 0.94);
+      margin-top: 50px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 2px;
+      align-items: center;
+      box-shadow: -1px -1px 10px -1px rgba(#333, 0.36);
+      p {
+        width: 300px;
+        color: #dfe6e4;
+        font-size: 1.1em;
+        text-align: center;
+      }
+      h1 {
+        color: #dfe6e4;
+        font-size: 2.2em;
+      }
+    }
+    .forms-login {
+      width: 537px;
+      height: 260px;
+      flex-direction: column;
+      .forms-conteiner {
+        width: 550px;
+        height: auto;
+        //background-color: orange;
+        margin-top: 50px;
+        flex-direction: column;
+
+        .text-box-user, .text-box-pass {
+          //margin: auto;
+          width: 500px;
+          height: 70px;
+          padding: 7px ;
+          //background-color: red;
+          // h2 {
+          //   width: 130px;
+          //   text-align: right;
+          //   color: #dfe6e4;
+          // }
+          .field {
+
+            label {
+              color: rgba(#d0d6d4, 0.71);
+              font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              font-size: 1.2em;
+              //background-color: #746534;
+            }
+          }
+          input {
+            //flex: 1;
+            color: #333;
+            font-size: 1.4em;
+            width: 300px;
+            height: 35px;
+            // margin-left: 5px;
+            // margin-right: 20px;
+            margin-top: 3px;
+            padding-left: 8px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 0 1.5px rgba(#d0d6d4, 0.71);
+            &:focus{
+              background-color: rgba(#eeeeee, 0.40);
+            }
+          }
+        }
+    }
+    }
+    .buton-login {
+      width: 537px;
+      height: 58px;
+      //background-color: #327a74;
+      input {
+        padding: 12px 80px 12px 80px;
+        background-color: rgba(#aecdcc, 0.18);
+        border: none;
+        box-shadow: 0 0 0 2px #bac3c3;
+        border-radius: 8px;
+        color: #eee;
+        font-size: 1.2em;
+        margin-top: 20px;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          background: rgba(#6aa5b0, 0.44);
+          // transition: background-size 2s ease-in;
+          // -moz-transition: background-size 2s ease-in;
+          // -ms-transition: background-size 2s ease-in;
+          // -o-transition: background-size 2s ease-in;
+          // -webkit-transition: background-size 2s ease-in;
+          // -webkit-transition: width 5s, height 4s;
+          // transition: width 5s, height 4s;
+          //box-shadow: 0 0 0 2px #5ea6b3;
+        }
+        &:focus {
+          background-color: rgba(#6aa5b0, 0.64);
+          box-shadow: 0 0 0 1px #bac3c3;
+          //border-radius: 9px;
+          box-shadow: none;
+        }
+      }
+    }
+    .footer-login {
+      width: 537px;
+      height: 89px;
+      background-color: #ba825e;
+      margin-bottom: 5px;
+      justify-content: space-between;
+      //flex: 1;
+      a {
+        flex: 1;
+        background-color: red;
+      }
+      // p {
+      //   width: 180px;
+      //   color: #eee;
+      //   text-align: center;
+      //   margin-top: 50px;
+      //   //background-color: rgba(#333333, 0.57);
+      //   padding: 10px;
+      // }
+      // .bara {
+      //   width: 2px;
+      //   height: 60%;
+      //   background-color: rgba(#c8d0ce, 0.63);
+      //   margin-top: 30px;
+      // }
+    }
+   }

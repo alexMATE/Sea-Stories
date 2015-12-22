@@ -1,26 +1,66 @@
-<h2>Log in</h2>
+<!-- <div class="login-forms">
+  <h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
     </div>
-  <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
 
-<%= render "devise/shared/links" %>
+    <% if devise_mapping.rememberable? -%>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end -%>
+
+    <div class="actions">
+      <%= f.submit "Log in" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div> -->
+
+
+
+<div class="conteiner-login flexy">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="carta-login">
+        <div class="header-login">
+          <p>You need to sign in or sigin up before continuing!</p>
+        </div>
+        <div class="forms-login flexy">
+          <div class="forms-conteiner flexy">
+            <div class="text-box-user flexy">
+              <!-- <h2>User name:</h2> -->
+              <div class="field">
+                <%= f.label :email %><br />
+                <%= f.email_field :email %>
+              </div>
+            </div>
+            <div class="text-box-pass flexy">
+              <!-- <h2>Password:</h2> -->
+              <div class="field">
+                <%= f.label :password %><br />
+                <%= f.password_field :password, autocomplete: "off" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buton-login flexy">
+          <%= f.submit "Log in" %>
+        </div>
+        <div class="footer-login flexy">
+          <!-- <p>Sign Up</p><span class="bara"></span>
+          <p>Forget your password</p> -->
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
