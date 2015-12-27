@@ -32,6 +32,15 @@ body {
 h1 {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.buton {
+  background-color: #68c3a2;
+  padding: 8px 16px 8px 16px;
+  border-radius: 10px;
+}
 
 #wraper_flex {
   width: 100%;
@@ -66,8 +75,8 @@ h1 {
       }
       .logo {
         width: 100%;
-        height: 66px;
-        background-color: #333; //#2e829d
+        height: 60px;
+        background-color: #68c3a2; //#2e829d
         background: {
           image: url('/img/fondo_logo2.png');
           size: cover;
@@ -75,7 +84,7 @@ h1 {
       }
       .menu {
         width: 80%;
-        height: 100%;
+        height: 80%;
         text-align: right;
         padding-right: 40px;
         //background-color: pink;
@@ -94,7 +103,6 @@ h1 {
             line-height: 37px;
             color: #6c7373;
             a {
-              text-decoration: none;
               color:#6c7373;
               &:hover {
                 border-right: 1px solid #828787;
@@ -146,7 +154,6 @@ h1 {
                .buuton_header {
 
                       a {
-                        text-decoration: none;
                         border: 1px solid #a4b8b8;
                         padding: 5px 12px 5px 12px;
                         border-radius: 3px;
@@ -169,7 +176,6 @@ h1 {
               font-size: 0.8em;
               .logout {
                  a {
-                        text-decoration: none;
                         border: 1px solid #a4b8b8;
                         padding: 5px 12px 5px 12px;
                         border-radius: 3px;
@@ -192,12 +198,17 @@ h1 {
 
       .imagen_header {
         width: 100%;
-        height: 350px;
+        height: 280px;
         //margin: auto;
         margin-top: 60px;
-        background-color:#b7d9d8;
+        background-color:#cfe3e2;
+        img {
+          width: 96px;
+          height: 100px;
+          margin-top: 100px;
+        }
         background: {
-          image: url('funmar66-03.svg');
+          image: url('moni44-2.png');
           repeat: no-repeat;
           size: cover;
           position: center;
@@ -223,7 +234,6 @@ h1 {
         margin-left: 20px;
         padding-top: 20px;
         a {
-          text-decoration: none;
           color: #8ca1a0;
           &:hover {
             color:#22bebe;
@@ -295,8 +305,7 @@ h1 {
               }
             }
             .title {
-              color: #3b3b3b;
-              //background-color: pink;
+
               width: 85%;
               margin: auto;
               margin-top: 25px;
@@ -311,18 +320,22 @@ h1 {
               margin-bottom: 100px;
             }
             .butonsito {
-              width: 107px;
-              height: 56px;
-              //background-color: pink;
-              bottom: 0;
-              right: 0;
+              width: 80px;
+              height: 20px;
+              bottom: 12px;
+              right: 12px;
               position: absolute;
-              background: {
-                   image: url('read-button22.svg');
-                  repeat: no-repeat;
-                  size: cover;
-                  position: top;
-                }
+              a {
+                color: #eee;
+                font-size: 0.9em;
+                padding-left: 5px;
+              }
+              // background: {
+              //      image: url('read-button22.svg');
+              //     repeat: no-repeat;
+              //     size: cover;
+              //     position: top;
+              //   }
             }
           }
 
