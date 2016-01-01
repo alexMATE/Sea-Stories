@@ -1,4 +1,4 @@
-<div class="comment">
+<!-- <div class="comment">
   <div class="comment_content">
     <p class="comment_name"><strong><%= comment.name %></strong></p>
     <p class="comment_body"><%= comment.body %></p>
@@ -12,4 +12,20 @@
                   data: { confirm: 'Are you sure?' } %>
     </p>
   <% end %>
+</div> -->
+
+
+<div class="conteiner-coment">
+  <div class="avatar-eria">
+    <div class="avatar"></div>
+  </div>
+  <div class="coment-eria">
+    <div class="nombre-fecha">
+      <span class="nombre"><%= comment.name %></span>
+      <span class="fecha"><%= time_ago_in_words(comment.created_at) %> Ago</span>
+    </div>
+    <div class="text-eria">
+      <p class="comment_body"><%= comment.body %></p>
+    </div>
+  </div>
 </div>

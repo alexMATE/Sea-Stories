@@ -1,3 +1,60 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h2 {
+  margin: 0;padding: 0;
+}
+.conteiner-coment {
+  width: 100%;
+  height: auto;
+  //background-color: #eee;
+  display: flex;
+  margin-top: 20px;
+  .avatar-eria {
+    width: 20%;
+    height: 100%;
+    //background-color: #845678;
+    display: flex;
+    justify-content: center;
+    .avatar {
+      width: 60px;
+      height: 60px;
+      background-color: #555;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+  }
+  .coment-eria {
+    width: 80%;
+    height: auto;
+    //background-color: pink;
+    .nombre-fecha {
+      width: 100%;
+      height: 50px;
+      //background-color: #fff;
+      display: flex;
+      align-items: flex-end;
+      .nombre {
+        margin-left: 5px;
+        font-size: 1.4em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #222;
+      }
+      .fecha {
+        margin-left: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        margin-bottom: 2px;
+        color: #39819e;
+      }
+    }
+    .text-eria {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9em;
+      color: #333;
+    }
+  }
+}
