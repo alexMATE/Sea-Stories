@@ -1,4 +1,4 @@
-<h2>Sign up</h2>
+<!-- <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -26,4 +26,52 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links" %> -->
+
+
+
+<div class="conteiner-login flexy">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="carta-login">
+        <div class="header-login">
+          <p>Sign Up</p>
+        </div>
+        <div class="forms-login flexy">
+          <div class="forms-conteiner flexy">
+            <div class="text-box-user flexy">
+              <!-- <h2>User name:</h2> -->
+              <div class="field">
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true %>
+              </div>
+            </div>
+            <div class="text-box-pass flexy">
+              <!-- <h2>Password:</h2> -->
+              <div class="field">
+                <%= f.label :password %>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "off" %>
+              </div>
+            </div>
+            <div class="text-box-pass flexy">
+              <!-- <h2>Confirmation Password:</h2> -->
+              <div class="field">
+                <%= f.label :password_confirmation %><br />
+                <%= f.password_field :password_confirmation, autocomplete: "off" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buton-login flexy">
+          <%= f.submit "Sign up" %>
+        </div>
+        <div class="footer-login">
+           <span class="holder flexy">
+            <%= render "devise/shared/links" %>
+          </span>
+        </div>
+      </div>
+      <% end %>
+    </div>
